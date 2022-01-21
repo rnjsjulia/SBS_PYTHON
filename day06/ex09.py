@@ -8,7 +8,7 @@
 # : 현재 속한 반복문을 벗어나는 키워드
 while True:
     city = input('대한민국의 수도는 ? ')
-    if city == '서울':
+    if city == '서울' or city == 'seoul' :
         print('정답입니다.')
         break
     else:

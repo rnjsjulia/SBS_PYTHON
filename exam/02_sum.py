@@ -3,11 +3,14 @@
 입력예시 N : 10
 출력예시 합계 : 55'''
 
-print("입력 :")
-i = int(input())
-
+N = input('정수 : ')
+N = int(N)
 sum = 0
-for n in range(1,i+1):
-    sum = sum + n
-    
-print( 'sum:', sum)
+for i in range (1, N+1):
+    sum = sum+i
+    if i != N :
+     print(i, end='+')
+    else:
+        print(i, end = '=')
+print(sum)
+print ("합계 : {}" . format(sum))
